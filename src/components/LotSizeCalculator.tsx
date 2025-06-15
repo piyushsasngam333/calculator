@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CalculatorForm } from './CalculatorForm';
 import { CalculateButton } from './CalculateButton';
 import { MetricCard } from './MetricCard';
+import { Calculator } from 'lucide-react';
 
 interface CalculationResults {
   lots: string;
@@ -81,9 +82,7 @@ export const LotSizeCalculator: React.FC = () => {
       <header className="flex w-full items-center gap-2 text-[32px] text-[#E4EEF5] font-medium tracking-[-0.96px] justify-center max-md:max-w-full">
         <div className="self-stretch flex min-w-60 items-center gap-2 my-auto">
           <div className="aspect-[1] object-contain w-12 shadow-[0px_-8px_32px_0px_rgba(78,193,255,0.06)_inset] self-stretch min-h-12 shrink-0 my-auto bg-gradient-to-br from-[#4EC1FF] to-[#126BA7] rounded-lg flex items-center justify-center">
-            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
+            <Calculator className="w-6 h-6 text-white" strokeWidth={2} />
           </div>
           <h1 className="text-[#E4EEF5] self-stretch my-auto">
             Lotsize Calculator
